@@ -12,12 +12,21 @@
 		<link href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700|Dancing+Script" rel="stylesheet"> 
 	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
-	<link rel="stylesheet" type="text/css" href="assets/css/boot.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/boot.css">\
+		<!--------------------->
+		<script type='text/javascript'>
+		window.onload = () => {
+			if (screen.width <= 500){
+				alert('Sorry, Website Can\'t be displayed correctly. Please Try on desktop or screen with higher resolution');
+			}
+		}
+		</script>
+		<!--------------------->
 	</head>
 	<body> 
 		<!-- popup -->
 		<!-- <i class="far fa-times-circle"></i> -->
-		
+		<div class="container popup" id='pop_up'>
 		<div class=" container popup">
 			<!-- <img class="far" src="http://icons.iconarchive.com/icons/danieledesantis/playstation-flat/512/playstation-cross-icon.png"> -->
 				
@@ -38,6 +47,7 @@
 			</div>
 			<div class="content"> 
 <pre>
+<h3 style='display: inline-flex;'> <div>H@CKGTBIT <span onclick='close_pop();'><i class="fas fa-times" style='cursor: pointer'></i></span></div></h3>
 <h3> <b>H@CKGTBIT</b></h3>
 <hr>
 <b>COME FALL IN LOVE WITH CODING!</b>
@@ -126,7 +136,7 @@ technology enthusiasts across the world. 
 				<ul class="links">
 					<li><a href="#">Home</a></li>
 					<li><a href="./about.html">About us</a></li>
-					<li><a href="#three">Galleryyy</a></li>
+					<li><a href="#three">Gallery</a></li>
 					<li><a href="./team.html">Know our Team</a></li>
 					<li><a href="./join.html">Want to join</a></li>
 				</ul>
@@ -134,8 +144,8 @@ technology enthusiasts across the world. 
 
 		<!-- Banner -->
 			<section id="banner" data-video="images/banner">
-				<div class="inner"><Br><br><br><Br><Br><Br><br><Br><Br><Br><Br><br><br><Br><Br><Br><br><Br><Br><Br>
-					<!-- <a href="#one" class="button special scrolly">Get Started</a> -->
+				<div class="inner"><Br><br><br>
+					 <a href="#one" class="button get_started scrolly">Get Started</a>
 				</div>
 			</section>
 
@@ -188,95 +198,89 @@ See you all :)
 					</div>
 				</div>
 			</section>
-
 		<!-- Two -->
-			<section id="two" class="wrapper style3">
-				<div class="inner">
-					<div id="flexgrid">
-						<div>
-							<header>
-								<h3>Tempus Feugiat</h3>
-							</header>
-							<p>Morbi interdum mollis sapien. Sed ac risus. Phasellus lacinia, magna a ullamcorper laoreet, lectus arcu</p>
-							<ul class="actions">
-								<li><a href="#" class="button alt">Learn More</a></li>
-							</ul>
-						</div>
-						<div>
-							<header>
-								<h3>Aliquam Nulla</h3>
-							</header>
-							<p>Ut convallis, sem sit amet interdum consectetuer, odio augue aliquam leo, nec dapibus tortor nibh sed </p>
-							<ul class="actions">
-								<li><a href="#" class="button alt">Learn More</a></li>
-							</ul>
-						</div>
-						<div>
-							<header>
-								<h3>Sed Magna</h3>
-							</header>
-							<p>Suspendisse mauris. Fusce accumsan mollis eros. Pellentesque a diam sit amet mi ullamcorper vehicula.</p>
-							<ul class="actions">
-								<li><a href="#" class="button alt">Learn More</a></li>
-							</ul>
-						</div>
+		<section id="two" class="wrapper style3">
+			<div class="inner">
+				<div id="flexgrid">
+					<div>
+						<header>
+							<h3>H@ck-GTBIT</h3>
+						</header>
+						<p>We are organising a hackathon for GTBITians in our college campus.
+						   Now its your chance to showcase your skills in coding. Want
+							 to know more click on the link given below.
+						   </p>
+						<ul class="actions">
+							<li><a href="#" class="button alt">Learn more</a></li>
+						</ul>
+					</div>
+					<div>
+						<header>
+							<h3>Bootcamps</h3>
+						</header>
+						<p>We try to organise bootcamps for providing latest information.
+						   These are organised at continous intervals for better communication
+							with the students.</p>
+						<ul class="actions">
+							<li><a href="#" class="button alt">Learn More</a></li>
+						</ul>
+					</div>
+					<div>
+						<header>
+							<h3>Insights</h3>
+						</header>
+						<p>Visit our gallery section to get an insight of our past experiences.
+						  Here you will get the information about all the events organised by our society.</p>
+						<ul class="actions">
+							<li><a href="#" class="button alt">Learn More</a></li>
+						</ul>
 					</div>
 				</div>
-			</section>
+			</div>
+		</section>
 
 		<!-- Three-gallery -->
 			<section id="three" class="wrapper style2">
-				<div class=" hwgallery">
-					
-					<div class=" top">
-				  <p class='gl'> Gallery
-						 <hr class="style1">
-				  </p>
-				   
-				
-				  </div>
-				  <div class=" container left " > 
-					  <div class="row">
-					
-						 <div class="col-lg-4 col-xs-6  thumbnail"> <img class="thumbnail2" src="images\gallery\1.png">
-					  </div>
-						<div class="col-lg-4 col-xs-6 thumbnail">  <img class="thumbnail2" src="images\gallery\2.png">
-						 </div>
-						 <div class="col-lg-4 col-xs-6 thumbnail">  <img class="thumbnail2" src="images\gallery\3.png" > 
-						 </div>
-						 <div class="col-lg-4 col-xs-6 thumbnail">  <img class="thumbnail2" src="images\gallery\4.jpg">
-						 </div>
-						 <div class="col-lg-4 col-xs-6 thumbnail">  <img class="thumbnail2" src="images\gallery\5.jpg">
-						 </div>
-						 <div class="col-lg-4 col-xs-6 thumbnail">  <img class="thumbnail2" src="images\gallery\6.jpg">
-						 </div>
-						 <div class="col-lg-4 col-xs-6 thumbnail">  <img class="thumbnail2" src="images\gallery\7.jpg">
-						 </div>
-						 <div class="col-lg-4 col-xs-6 thumbnail">  <img class="thumbnail2" src="images\gallery\8.JPG">
-						 </div>
-						 <div class="col-lg-4 col-xs-6 thumbnail">  <img class="thumbnail2" src="images\gallery\9.JPG">
-						 </div>
+				<div id='founder_section'>
+					<div id='section_block'>
+						<center><br>
+								<div class='founder_name'>Founder</div>
+							<div class='founder_img'>
+							<div class='founder'>
+							</div>
 						</div>
-						 
-						 
-			
-				   
-					 
-				  </div>
-			
-			
-			
-				 </div>
+					<div class='founder_name'>Tanisha &nbsp;Jain</div>
+					<div class='founder_content'>
+						Being the founder of HelloWorld society, Tanisha is very hard working and the most valuable asset for our organisation. With her helping nature towards her fellow mates and juniors, she started this initiative to give basic knowledge to everyone and anyone seeking for it. Tanisha has been and always will be a person to look up to.
+					</div>
+					</center>
+					</div>
+					<div></div>
+					<div id='section_block'><br>
+							<center>
+									<div class='founder_name'>Co-Founder</div>
+								<div class='founder_img'>
+								<div class='co_founder'></div>
+							</div>
+						<div class='founder_name'>Gurjyot &nbsp;Singh</div>
+						<div class='founder_content'>
+							A phenomenal example of companionship and consistency.
+Being the co-founder of HelloWorld society,  Gurjyot is a very strategic and well-planned leader. With his extraordinary organization and leadership skills, he has only taken the team forward.
+						</div>
+						</center>
+					</div>
+				</div>
 			</section>
 
 		<!-- Four -->
 			<section id="four" class="wrapper style3">
 				<div class="inner">
 
-					<header class="align-center">
-							<div class='quote_symbol'><i class="far fa-comments"></i> </div>
-						<h2>Quote For the day</h2>
+					<header class="align-center" style='display: inline-flex;'>
+							<div class='quote_symbol'><span class="far fa-comments"></span> </div>
+						<div><h2>Quote For the day</h2>
 						<p class='quote_day'>Any fool can write code that a computer can understand.<br> Good programmers write code that humans can understand.</p>
+					</div>
 					</header>
 
 				</div>
@@ -285,7 +289,7 @@ See you all :)
 		<!-- Footer -->
 			<footer id="footer" class="wrapper">
 					<div class="copyright">
-						&copy; Hello World 2018</div>
+						&copy; Hello World 2019</div>
 			</footer>
 
 		<!-- Scripts -->

@@ -138,7 +138,6 @@
 
 })(jQuery);
 var ban=$("#banner");
-var far= $(".far");
 var popup=$(".popup");
 var one=$("#one");
 
@@ -156,3 +155,7 @@ one.click(function(){
 	
 });
 
+const close_pop = () => {
+	document.getElementById('pop_up').style.opacity=0;
+	document.getElementById('pop_up').style.zIndex=-1;
+}
